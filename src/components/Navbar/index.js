@@ -1,28 +1,36 @@
 import React from 'react';
-import {Nav, NavLink, Bars, NavMenu} from './NavbarElements';
+import { FaBars } from 'react-icons/fa';
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements';
 
-const Navbar = () => {
+
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
-          <NavLink to="/">
-              <img src={require('../../images/splendi_logo_convert.svg').default} 
-              heigth={100} width={100}/>
-          </NavLink>
-          <Bars />
-          <NavMenu>
-              <NavLink to="/about" activeStyle>
-                  about
-              </NavLink>
-              <NavLink to="/tour" activeStyle>
-                  tour
-              </NavLink>
-              <NavLink to="/merch" activeStyle>
-                  merch
-              </NavLink>
-          </NavMenu>
+          <NavbarContainer>
+            <NavLogo to="/" > 
+                 <img src={require('../../images/splendi_web.svg').default} style={{ height: '300px', width: '300px' }}  />
+                
+            </NavLogo>
+            <MobileIcon onClick={toggle}>
+                <FaBars />
+            </MobileIcon>
+            <NavMenu>
+                <NavItem>
+                    <NavLinks to="about">about</NavLinks>
+                </NavItem>
+                <NavItem>
+                    <NavLinks to="tour">tour</NavLinks>
+                </NavItem>
+                <NavItem>
+                    <NavLinks to="merch">merch</NavLinks>
+                </NavItem>
+            </NavMenu>
+            
+
+          </NavbarContainer>
           
-          </Nav>
+        </Nav>
           
     </>
   )
