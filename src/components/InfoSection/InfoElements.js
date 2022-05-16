@@ -12,7 +12,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display: grid;
     z-index: 1;
-    height: 860px;
+    height: 1000px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
@@ -100,6 +100,6 @@ export const Img = styled.img`
   width: 100%;
   margin-top: 0;
   margin-right: 0;
-  margin-left: 15px;
+  margin-left: 0px;
   padding-right: 0;
 `;

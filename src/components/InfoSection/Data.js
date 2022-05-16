@@ -13,3 +13,34 @@ export const homeObjOne = {
     primary: true,
     darkText: false
 };
+
+export const homeObjTwo = {
+    id: 'tour',
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    headline: 'tour',
+    description: "buy tickets here",
+    buttonLabel: 'get tickets',
+    imgStart: false,
+    img: require('../../images/splendi_port_2.svg').default,
+    alt: 'Portrait',
+    dark: false,
+    primary: false,
+    darkText: true
+};
+
+export const homeObjThree = {
+    id: 'merch',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    headline: 'merch',
+    description: "merch available here",
+    imgStart: false,
+    img: require('../../images/splendi_port_2.svg').default,
+    alt: 'Portrait',
+    dark: true,
+    primary: true,
+    darkText: false
+};
