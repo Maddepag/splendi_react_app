@@ -11,6 +11,10 @@ export const HeroContainer = styled.div`
     position: relative;
     z-index: 1;
 
+    @media screen and (max-width: 768px) {
+        background: url('/images/splendi_purple.png') center center/cover no-repeat;
+    };
+
     :before {
         content: '';
         position: absolute;
@@ -53,7 +57,25 @@ export const VideoBg = styled.video`
     -o-object-fit: cover;
     object-fit: cover;
     background: #232a34;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    };
+
+    
 `;
+
+// export const PhotoBg = styled.img`
+//     display: none;
+
+//     @media screen and (max-width: 768px) {
+//         width: 100%;
+//         height: 100%;
+//         -o-object-fit: cover;
+//         object-fit: cover;
+//         background: #232a34;
+//     };
+// `;
 
 export const HeroContent = styled.div`
     z-index: 3;

@@ -6,13 +6,14 @@ import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrap
 const HeroSection = () => {
   return (
     <HeroContainer id="home">
-        <HeroBg>
+        <HeroBg> 
             <VideoBg autoPlay loop muted src={Video} type='splendi_vid.mp4' />
+            
         </HeroBg>
 
         <HeroContent>
             <HeroH1></HeroH1>
-            <HeroP>cool stuff coming soon</HeroP>
+            <HeroP>under construction</HeroP>
             <HeroBtnWrapper></HeroBtnWrapper>
         </HeroContent>
     </HeroContainer>
