@@ -1,3 +1,5 @@
+    
+
 export const homeObjOne = {
     id: 'about',
     lightBg: false,
@@ -19,15 +21,16 @@ export const homeObjTwo = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    headline: 'tour',
-    description: "buy tickets here",
+    headline: 'upcoming shows',
+    description: "MAY 31 - j solomon w/ splendi and Strange Weekend at PhilaMOCA!",
     buttonLabel: 'get tickets',
     imgStart: false,
-    img: require('../../images/splendi_port_2.svg').default,
-    alt: 'Portrait',
+    img: require('../../images/edit_philamoca.svg').default,
+    alt: 'tour_photo',
     dark: false,
     primary: false,
-    darkText: true
+    darkText: true,
+    buttonRoute: "https://dice.fm/partner/dice/event/d9d6o-j-solomon-31st-may-philamoca-philadelphia-tickets?dice_source=web&dice_medium=organic&dice_campaign=DICE&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1Q83NkwyMjFJSjUySAEAe%2FDKHiEAAAA%3D&_branch_match_i="
 };
 
 export const homeObjThree = {
@@ -36,11 +39,13 @@ export const homeObjThree = {
     lightText: true,
     lightTextDesc: true,
     headline: 'merch',
-    description: "merch available here",
+    description: "shirts, totes, and more :)",
     imgStart: false,
     img: require('../../images/splendi_port_2.svg').default,
     alt: 'Portrait',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: false,
+    buttonLabel: 'view merch',
+    buttonRoute: 'https://www.instagram.com/stories/highlights/17908012556487174/?hl=en'
 };

@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
+import { Link as LinkRoute } from 'react-router-dom';
 
 export const InfoContainer = styled.div`
     color: #4aa4f7;
@@ -90,6 +91,25 @@ export const BtnWrap = styled.div`
     justify-content: flex-start;
 
 `
+export const BtnRoute = styled(LinkRoute)`
+    border-radius: 50px;
+    background: #01bf71;
+    white-space: nowrap;
+    padding: 16px 64px;
+    color: #010606;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+    }
+`;
 
 export const ImgWrap = styled.div`
     max-width: 555px;

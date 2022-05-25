@@ -106,11 +106,22 @@ export const HeroH1 = styled.h1`
     }
 `;
 
+
+export const HeroAnnounce = styled.div`
+    border-radius: 25px;
+    
+    
+    
+`;
+
+
 export const HeroP = styled.p`
-    margin-top: 24px;
+    margin: 0 auto;
+    padding: 50px 0;
     color: #fff;
     font-size: 24px;
     text-align: center;
+    justify-content: center;
     max-width: 600px;
 
     @media screen and (max-width: 768px) {
@@ -121,6 +132,8 @@ export const HeroP = styled.p`
         font-size: 18px;
     }
 `;
+
+
 
 export const HeroBtnWrapper = styled.div`
     margin-top: 32px;
