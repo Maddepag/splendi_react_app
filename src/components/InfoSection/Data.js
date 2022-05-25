@@ -47,5 +47,5 @@ export const homeObjThree = {
     primary: true,
     darkText: false,
     buttonLabel: 'view merch',
-    buttonRoute: 'https://www.instagram.com/stories/highlights/17908012556487174/?hl=en'
+    buttonRoute: 'https://www.instagram.com/splendiiii/?hl=en'
 };
