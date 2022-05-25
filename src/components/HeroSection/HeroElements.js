@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import heroImage from '../../images/splendi_logo_convert.svg'
 
 
 export const HeroContainer = styled.div`
@@ -7,12 +8,16 @@ export const HeroContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 950px;
+    height: 1000px;
     position: relative;
     z-index: 1;
 
     @media screen and (max-width: 768px) {
-        background: url('/images/splendi_purple.png') center center/cover no-repeat;
+        background-image: url(${heroImage});
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
     };
 
     :before {
