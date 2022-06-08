@@ -8,10 +8,11 @@ const Sidebar = ({ isOpen, toggle }) => {
             <CloseIcon />
         </Icon>
         <SidebarWrapper>
-            <SidebarMenu>
-                <SidebarLink to="about" onClick={toggle} >about</SidebarLink>
-                <SidebarLink to="tour" onClick={toggle} >tour</SidebarLink>
-                <SidebarLink to="merch" onClick={toggle} >merch</SidebarLink>
+            <SidebarMenu> 
+                <SidebarLink to="/about" onClick={toggle} >about</SidebarLink>
+                <SidebarLink to="/shows" onClick={toggle} >shows</SidebarLink>
+                <SidebarLink to="/merch" onClick={toggle} >merch</SidebarLink>
+                <SidebarLink to="/music" onClick={toggle} >music</SidebarLink>
             </SidebarMenu>
         </SidebarWrapper>
     </SidebarContainer>

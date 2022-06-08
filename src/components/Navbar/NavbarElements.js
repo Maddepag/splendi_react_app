@@ -6,7 +6,7 @@ import {FaBars} from 'react-icons/fa';
 export const Nav = styled.nav`
  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
  height: 80px;
- margin-top: -80px;
+ background-color: #000;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -75,7 +75,7 @@ export const NavItem = styled.li`
  
 `;
 
-export const NavLinks = styled(LinkScroll)`
+export const NavLinks = styled(LinkRouter)`
  color: #fff;
  display: flex;
  align-items: center;
