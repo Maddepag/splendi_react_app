@@ -10,7 +10,7 @@ const About = () => {
 
     
     return (
-        
+        <>
             <AboutContainer id="about"> 
                 <AboutBg />
         
@@ -32,7 +32,9 @@ const About = () => {
                 </AboutContent>
                 
             </AboutContainer>
-          )
+
+        </>
+          );
     
 };
 

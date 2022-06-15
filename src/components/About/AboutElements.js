@@ -13,12 +13,7 @@ export const AboutContainer = styled.div`
     height: 1000px;
     position: relative;
     z-index: 1;
-
-    @media screen and (max-width: 768px) {
-        background-image: url(${bgImage});
-        
-        
-    };
+    overflow: hidden;
 
     :before {
         content: '';
@@ -42,7 +37,9 @@ export const AboutContainer = styled.div`
           ),
           linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
         z-index: 2;
-      }
+      },
+
+      
     `;
 
 export const AboutBg = styled.div`
@@ -55,6 +52,21 @@ export const AboutBg = styled.div`
     width: 100%;
     height: 100%;
     overflow: hidden;
+
+    @media screen and (max-width: 768px) {
+        background-image: url(${bgImage});
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        background-size: 350px 250px;
+        
+        
+        
+        
+    };
     
 `
 export const AboutContent = styled.div`
@@ -66,18 +78,29 @@ export const AboutContent = styled.div`
     flex-direction: column;
     align-items: center;
     
+    @media screen and (max-width: 480px) {
+        padding: 10px;
+      }
 `;
 
 
 
 export const AboutAnnounceBox = styled.div`
-    width: 800px;
+    
+    width: 80%
     top: 50%;
     padding: 25px;
     background: transparent;
     background-color: rgba(0, 3, 28, 0.7);
     border-radius: 25px;
     
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 32px;
+    }
 `;
 
 
