@@ -80,7 +80,7 @@ export const VideoBg = styled.video`
 //         -o-object-fit: cover;
 //         object-fit: cover;
 //         background: #232a34;
-//     };
+//     }; 
 // `;
 
 export const HeroContent = styled.div`
@@ -110,6 +110,7 @@ export const HeroH1 = styled.h1`
 
 export const HeroAnnounce = styled.div`
     border-radius: 25px;
+    
     
     
     

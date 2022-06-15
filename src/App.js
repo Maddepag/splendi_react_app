@@ -8,6 +8,7 @@ import MerchPage from './pages/merch';
 import MusicPage from './pages/music';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
     <Router>
       <Navbar toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
+      
       <Routes>
         <Route path='/' element={ <Home /> }></Route>
         <Route path='/about' element={ <AboutPage /> }></Route>
@@ -28,6 +30,7 @@ function App() {
         <Route path='/merch' element={ <MerchPage /> }></Route>
         <Route path='/music' element={ <MusicPage /> }></Route>
       </Routes>
+      <Footer />
     </Router>
     
   );
