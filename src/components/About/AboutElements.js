@@ -51,6 +51,7 @@ export const AboutBg = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
+    background-size: 325px 325px;
     overflow: hidden;
 
     @media screen and (max-width: 768px) {
@@ -61,7 +62,7 @@ export const AboutBg = styled.div`
         bottom: 0;
         left: 0;
         overflow: hidden;
-        background-size: 350px 250px;
+        background-size: 125px 125px;
         
         
         
