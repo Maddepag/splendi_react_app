@@ -31,7 +31,8 @@ const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}> 
-                 <img src={require('../../images/splendi_web.svg').default} style={{ height: '300px', width: '300px' }}  />
+                 <img src={require('../../images/splendi_web.svg').default} 
+                 style={{ padding: '0px', height: '150px', width: '150px', overflow: 'none' }}  />
                 
             </NavLogo>
             <MobileIcon onClick={toggle}>

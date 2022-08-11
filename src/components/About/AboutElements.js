@@ -39,6 +39,14 @@ export const AboutContainer = styled.div`
         z-index: 2;
       },
 
+      @media screen and (max-width: 768px) {
+        
+        
+        
+        
+        
+    };
+
       
     `;
 
@@ -63,39 +71,37 @@ export const AboutBg = styled.div`
         left: 0;
         overflow: hidden;
         background-size: 125px 125px;
-        
-        
-        
-        
     };
     
 `
 export const AboutContent = styled.div`
     z-index: 3;
     max-width: 1200px;
+    height: 650px;
     position: absolute;
     padding: 8px 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     
-    @media screen and (max-width: 480px) {
-        padding: 10px;
+    @media screen and (max-width: 768px) {
+        height: 650px;
+        
       }
 `;
 
 
 
 export const AboutAnnounceBox = styled.div`
-    
-    width: 80%
-    top: 50%;
+    position: relative;
+
     padding: 25px;
     background: transparent;
     background-color: rgba(0, 3, 28, 0.7);
     border-radius: 25px;
     
     @media screen and (max-width: 768px) {
+        top: 20%;
         font-size: 40px;
     }
 
