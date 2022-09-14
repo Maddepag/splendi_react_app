@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { FaBars } from 'react-icons/fa';
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks} from './NavbarElements';
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavLinksOut} from './NavbarElements';
 import {IconContext} from 'react-icons/lib';
 import {animateScroll as scroll} from 'react-scroll';
 
@@ -40,22 +40,24 @@ const Navbar = ({ toggle }) => {
             </MobileIcon>
             <NavMenu>
                 <NavItem>
-                    <NavLinks to="/about" 
+                    <NavLinksOut href="https://linktr.ee/splendiii" 
                             smooth={true}
                             duration={500} 
                             spy={true} 
                             exact='true' 
                             offset={-80}
-                            >about</NavLinks>
+                            target='_blank'
+                            >music</NavLinksOut>
                 </NavItem>
                 <NavItem>
-                    <NavLinks to="/shows" 
+                    <NavLinksOut href="https://www.youtube.com/channel/UC2Oq_9x0zTMMxqWnWrW3EcQ" 
                             smooth={true}
                             duration={500} 
                             spy={true} 
                             exact='true' 
                             offset={-80}
-                            >shows</NavLinks>
+                            target='_blank'
+                            >videos</NavLinksOut>
                 </NavItem>
                 <NavItem>
                     <NavLinks to="/merch"
@@ -65,14 +67,6 @@ const Navbar = ({ toggle }) => {
                           exact='true' 
                           offset={-80}
                           >merch</NavLinks>
-                </NavItem>
-                <NavItem>
-                    <NavLinks to="/music"
-                            smooth={true}
-                            duration={500} 
-                            spy={true} 
-                            exact='true' 
-                            offset={-80}>music</NavLinks>
                 </NavItem>
             </NavMenu>
             

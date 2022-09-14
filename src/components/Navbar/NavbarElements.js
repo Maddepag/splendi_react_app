@@ -90,5 +90,20 @@ export const NavLinks = styled(LinkRouter)`
  }
 `;
 
+export const NavLinksOut = styled.a`
+ color: #fff;
+ display: flex;
+ align-items: center;
+ text-decoration: none;
+ padding: 0 1rem;
+ height: 100%;
+ cursor: pointer;
+ text-decoration: none;
+
+ &.active {
+     border-bottom: 3px solid #4aa4f7;
+ }
+`;
+
 
 
