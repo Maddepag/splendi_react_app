@@ -1,87 +1,90 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
 import heroImage from '../../images/splendi_logo_convert.svg'
 
 
 export const HeroContainer = styled.div`
-    background: #0c0c0c;
-    display: flex;
+    background: #D170D0;
     justify-content: center;
-    align-items: center;
-    padding: 0 30px;
     height: 1000px;
     position: relative;
     z-index: 1;
+    overflow-y: hidden;
+    display: flex;
 
-    @media screen and (max-width: 768px) {
-        background-image: url(${heroImage});
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        
-    };
-
-    :before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: -webkit-gradient(
-            linear,
-            left top,
-            left bottom,
-            from(rgba(0, 0, 0, 0.2)),
-            to(rgba(0, 0, 0, 0.2))
-          ),
-          -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(transparent));
-        background: linear-gradient(
-            180deg,
-            rgba(0, 0, 0, 0.2) 0%,
-            rgba(0, 0, 0, 0.6) 100%
-          ),
-          linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-        z-index: 2;
-      }
-    `;
-
-export const HeroBg = styled.div`
-    postion: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
     
+
+    // @media screen and (max-width: 768px) {
+    //     background-image: url(${heroImage});
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     background-position: center;
+        
+    // };
+
 `
 
-export const VideoBg = styled.video`
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    background: #232a34;
+// export const HeroBg = styled.div`
+//     background: #D170D0;
+//     postion: relative;
+//     display: flex;
+//     justify-content: center;
+//     width: 100%;
+//     align-items: center;
+//     overflow: hidden;
+    
+// `
 
-    @media screen and (max-width: 768px) {
-        display: none;
-    };
+// export const VideoBg = styled.video`
+//     width: 100%;
+//     height: 100%;
+//     -o-object-fit: cover;
+//     object-fit: cover;
+//     background: #232a34;
 
+//     @media screen and (max-width: 768px) {
+//         display: none;
+//     };
+
+    
+// `;
+
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+export const Rotate = styled.img`
+    width: 30%;
+    margin: 0 auto;
+    position: absolute;
+    top: 20%;
+
+    animation: ${rotate} 10s linear infinite;
+   
+    
     
 `;
 
-// export const PhotoBg = styled.img`
-//     display: none;
+export const PhotoBg = styled.img`
+        width: 30%;
+        margin: 0 auto;
+        position: absolute;
+        top: 20%;
+        
+   
 
-//     @media screen and (max-width: 768px) {
-//         width: 100%;
-//         height: 100%;
-//         -o-object-fit: cover;
-//         object-fit: cover;
-//         background: #232a34;
-//     }; 
-// `;
+    @media screen and (max-width: 768px) {
+        width: 35%;
+        margin: 0 auto;
+        position: absolute;
+        
+    }; 
+`
 
 export const HeroContent = styled.div`
     z-index: 3;
@@ -91,6 +94,7 @@ export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 `;
 
 export const HeroH1 = styled.h1`

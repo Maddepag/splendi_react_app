@@ -1,15 +1,13 @@
 import React from 'react';
 import Video from '../../videos/splendi_vid.mp4';
-import Image from '../../images/philamoca_gig.png';
+import Image from '../../images/splendi_logo_convert.svg';
 import {Button} from '../ButtonElements'
-import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroAnnounce, HeroBtnWrapper} from './HeroElements'
+import { HeroContainer, HeroBg, PhotoBg, VideoBg, HeroContent, HeroH1, HeroP, HeroAnnounce, HeroBtnWrapper, Rotate} from './HeroElements'
 
 const HeroSection = () => {
   return (
     <HeroContainer id="home"> 
-        <HeroBg> 
-            <VideoBg autoPlay loop muted src={Video} type='splendi_vid.mp4' />
-        </HeroBg>
+        <Rotate src={Image} type='splendi_logo_convert.svg'></Rotate>
 
         <HeroContent>
             <HeroH1></HeroH1>

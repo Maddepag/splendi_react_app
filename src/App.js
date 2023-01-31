@@ -20,7 +20,7 @@ function App() {
   
   return (
     <Router>
-      <Navbar toggle={toggle} />
+      {/* <Navbar toggle={toggle} /> */}
       <Sidebar isOpen={isOpen} toggle={toggle} />
       
       <Routes>
